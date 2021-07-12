@@ -23,6 +23,11 @@ const App = (props) => {
     ]
   });
 
+  const handleAddBook = (newBook) => {
+    setBookstore({
+      bookstore: [ ...bookstore.bookStore, newBook]
+    })
+  };
 
   const bookStore = bookstore.bookStore.map((bookstore, index) => {
     return (
@@ -31,7 +36,7 @@ const App = (props) => {
   });
   return (
     <div>
-      <BookStoreForm />
+      <BookStoreForm addBook={handleAddBook} />
       {bookStore}
     </div>
   );
