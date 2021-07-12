@@ -24,20 +24,21 @@ const BookStoreForm = (props) => {
         })
     }
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="contactForm">
+            <h1>Add book to Store</h1>
             <div>
                 <label htmlFor="title">TITLE:</label>
-                <input type="text" name="title" value={bookstoreForm.title} onChange={handleChacge} placeholder="Enter the Title of the book" />
+                <input className="inputField" type="text" name="title" value={bookstoreForm.title} onChange={handleChacge} placeholder="Enter the Title of the book" />
             </div>
             <div>
                 <label htmlFor="author">AUTHOR:</label>
-                <input type="name" name="author" value={bookstoreForm.author} onChange={handleChacge} placeholder="Enter Author's name" />
+                <input className="inputField" type="name" name="author" value={bookstoreForm.author} onChange={handleChacge} placeholder="Enter Author's name" />
             </div>
             <div>
                 <label htmlFor="description">DESCRIPTION:</label>
-                <input type="text" name="description" value={bookstoreForm.description} onChange={handleChacge} placeholder="What is the book about" />
+                <input className="inputField" type="text" name="description" value={bookstoreForm.description} onChange={handleChacge} placeholder="What is the book about" />
             </div>
-            <div><button className="submit">Add Book</button></div>
+            <div className="sub"><button className="submit">Add Book</button></div>
         </form>
     );
 }
