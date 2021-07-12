@@ -26,7 +26,7 @@ const BookStoreForm = (props) => {
     }
     return (
         <form onSubmit={handleSubmit} className="contactForm">
-            <h1>Add book to Store</h1>
+            <h1>LIBRARY</h1>
             <div>
                 <label htmlFor="title">TITLE:</label> <br />
                 <input className="inputField" type="text" name="title" value={bookstoreForm.title} onChange={handleChacge} placeholder="Enter the Title of the book" />
