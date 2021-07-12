@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import BookStore from "./Components/BookStore";
 import BookStoreForm from "./Components/BookStoreForm";
+import libraryVideo from "./Components/Library.mp4";
+import './App.css';
 
 const App = (props) => {
   const [bookstore, setBookstore] = useState({
@@ -34,10 +36,15 @@ const App = (props) => {
   });
 
   return (
-    <div>
-      <BookStoreForm addBook={handleAddBook} />
-      {bookStore}
-    </div>
+    <>
+      <video autoplay muted loop id="myVideo">
+      <source src={libraryVideo} type="video/mp4" />
+      </video>
+      <div className="completeContact">
+        <BookStoreForm addBook={handleAddBook} />
+        {bookStore}
+      </div>
+    </>
   );
 };
 
