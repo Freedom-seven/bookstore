@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import BookStore from './Components/BookStore';
 
 const App = (props) => {
   const [bookstore, setBookstore] = useState({
@@ -19,10 +20,17 @@ const App = (props) => {
         description: "LIFE as a DEVELOPER"
       }
     ]
-  })
+  });
+
+
+  const bookStore = bookstore.bookStore.map((bookstore, index) => {
+    return (
+      <BookStore bookstore={bookstore} key={index} />
+    )
+  });
   return (
     <div>
-      <h1>BOOKSTORE</h1>
+      {bookStore}
     </div>
   );
 }
