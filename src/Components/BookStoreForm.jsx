@@ -18,6 +18,7 @@ const BookStoreForm = (props) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         props.addBook(bookstoreForm);
+        alert("Book added")
         setBoostoreForm({
             title: "",
             author: "",
