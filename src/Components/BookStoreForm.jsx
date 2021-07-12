@@ -36,6 +36,7 @@ const BookStoreForm = (props) => {
                 <label htmlFor="description">DESCRIPTION:</label>
                 <input type="text" name="description" value={bookstoreForm.description} onChange={handleChacge} placeholder="Write Description" />
             </div>
+            <div><button className="submit">Add Book</button></div>
         </form>
     );
 }
