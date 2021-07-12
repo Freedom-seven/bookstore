@@ -16,7 +16,7 @@ const BookStoreForm = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        props.BookStoreForm.addBook(bookstoreForm);
+        props.addBook(bookstoreForm);
         setBoostoreForm({
             title: "",
             author: "",
@@ -35,7 +35,7 @@ const BookStoreForm = (props) => {
             </div>
             <div>
                 <label htmlFor="description">DESCRIPTION:</label>
-                <input type="text" name="description" value={bookstoreForm.description} onChange={handleChacge} placeholder="Write something about the book" />
+                <input type="text" name="description" value={bookstoreForm.description} onChange={handleChacge} placeholder="What is the book about" />
             </div>
             <div><button className="submit">Add Book</button></div>
         </form>
