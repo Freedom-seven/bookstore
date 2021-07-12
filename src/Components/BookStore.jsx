@@ -6,6 +6,7 @@ const BookStore = ({bookstore, index}) => {
         <h3>Title: {bookstore.title}</h3>
         <p>Author:<i> {bookstore.author}</i></p>
         <p>Description: {bookstore.description}</p>
+        <hr />
       </div>
     )
 };
