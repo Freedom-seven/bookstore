@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import BookStore from './Components/BookStore';
+import BookStoreForm from './Components/BookStoreForm';
 
 const App = (props) => {
   const [bookstore, setBookstore] = useState({
@@ -30,6 +31,7 @@ const App = (props) => {
   });
   return (
     <div>
+      <BookStoreForm />
       {bookStore}
     </div>
   );
