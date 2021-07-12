@@ -8,6 +8,6 @@ const BookStore = ({bookstore, index}) => {
         <p>Description: {bookstore.description}</p>
       </div>
     )
-}
+};
 
 export default BookStore;
